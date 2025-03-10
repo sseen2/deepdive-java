@@ -1,4 +1,4 @@
-package mission.figure;
+package mission.figure1;
 
 public enum FigureType {
     RECTANGLE("직사각형"),
