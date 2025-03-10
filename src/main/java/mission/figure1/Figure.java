@@ -3,12 +3,12 @@ package mission.figure1;
 public class Figure {
     private final mission.figure1.FigureType figureType;
     private final int width;
-    private final int length;
+    private final int height;
 
-    public Figure(mission.figure1.FigureType figureType, int width, int length) {
+    public Figure(mission.figure1.FigureType figureType, int width, int height) {
         this.figureType = figureType;
         this.width = width;
-        this.length = length;
+        this.height = height;
     }
 
     public void printArea() {
@@ -26,10 +26,10 @@ public class Figure {
             return radius * radius * 3.14;
         }
         if (figureType == mission.figure1.FigureType.TRIANGLE) {
-            return (width * length) / 2.0;
+            return (width * height) / 2.0;
         }
         if (figureType == mission.figure1.FigureType.RECTANGLE) {
-            return width * length;
+            return width * height;
         }
         return -1;
     }

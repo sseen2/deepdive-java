@@ -2,26 +2,26 @@ package mission.rectangle;
 
 public class Rectangle {
     private final int width;
-    private final int length;
+    private final int height;
 
-    public Rectangle(int width, int length) {
+    public Rectangle(int width, int height) {
         this.width = width;
-        this.length = length;
+        this.height = height;
     }
 
     public int extent() {
-        return width * length;
+        return width * height;
     }
 
     public int perimeter() {
-        return (2 * width) + (2 * length);
+        return (2 * width) + (2 * height);
     }
 
     public int getWidth() {
         return width;
     }
 
-    public int getLength() {
-        return length;
+    public int getHeight() {
+        return height;
     }
 }
