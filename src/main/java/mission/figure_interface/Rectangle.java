@@ -1,4 +1,4 @@
-package mission.figure2;
+package mission.figure_interface;
 
 public class Rectangle implements Figure {
     private final int width;

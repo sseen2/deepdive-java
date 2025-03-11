@@ -1,11 +1,11 @@
-package mission.figure1;
+package mission.figure_array;
 
 public class Figure {
-    private final mission.figure1.FigureType figureType;
+    private final mission.figure_array.FigureType figureType;
     private final int width;
     private final int height;
 
-    public Figure(mission.figure1.FigureType figureType, int width, int height) {
+    public Figure(mission.figure_array.FigureType figureType, int width, int height) {
         this.figureType = figureType;
         this.width = width;
         this.height = height;
@@ -21,14 +21,14 @@ public class Figure {
     }
 
     private double getArea() {
-        if (figureType == mission.figure1.FigureType.CIRCLE) {
+        if (figureType == mission.figure_array.FigureType.CIRCLE) {
             double radius = (double) width / 2.0;
             return radius * radius * 3.14;
         }
-        if (figureType == mission.figure1.FigureType.TRIANGLE) {
+        if (figureType == mission.figure_array.FigureType.TRIANGLE) {
             return (width * height) / 2.0;
         }
-        if (figureType == mission.figure1.FigureType.RECTANGLE) {
+        if (figureType == mission.figure_array.FigureType.RECTANGLE) {
             return width * height;
         }
         return -1;
